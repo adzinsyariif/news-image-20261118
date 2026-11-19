@@ -21,7 +21,7 @@ plane crash, and Cyclone Akvan nearing Odisha.
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
-`main.ts` (Node 22, standard library only, no network) copies the repository's
+`main.ts` (Node 22, standard library only, no network) creates the output directory if needed and copies the repository's
 `entry.png` to `/output/entry.png` (or `$MAKEFUN_OUTPUT_DIR/entry.png`). It runs
 deterministically: both runs write byte-identical output.
 
